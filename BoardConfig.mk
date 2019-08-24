@@ -76,11 +76,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_KMODULES := true
 
 # Kernel
-BOARD_KERNEL_IMAGE_NAME := Image.gz
-BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/bootimg/bootimg.mk
-TARGET_KERNEL_CONFIG := aio_otfp_n_defconfig
-TARGET_KERNEL_SOURCE := kernel/lenovo/aio_otfp
-TARGET_MTK_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Recovery allowed devices
 TARGET_OTA_ASSERT_DEVICE := K50-t5,aio_otfp_m,aio_otfp,K3Note
